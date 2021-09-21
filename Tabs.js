@@ -44,7 +44,7 @@ export default function Tabs() {
           tabBarShowLabel: false,
           tabBarIcon: ({ focused }) => (
             <MaterialIcons
-              name={focused ? "group" : "people-outline"}
+              name={focused ? "people" : "people-outline"}
               size={25}
               color={focused ? "#1976D2" : "black"}
             />
