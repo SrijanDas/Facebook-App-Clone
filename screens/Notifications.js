@@ -1,12 +1,10 @@
 import React from "react";
 import { View, Text } from "react-native";
 
-export default function Home() {
+export default function Notifications() {
   return (
     <View>
-      <Text>Home</Text>
-      {/* <Share /> */}
-      {/* <Posts /> */}
+      <Text>Notifications</Text>
     </View>
   );
 }
