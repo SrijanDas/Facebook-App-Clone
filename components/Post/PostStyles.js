@@ -36,13 +36,16 @@ const styles = StyleSheet.create({
   postContent: {},
   postCaption: {
     paddingHorizontal: 10,
-    marginBottom: 10,
+    marginBottom: 8,
+    fontSize: 16,
   },
   postImage: {
     height: 280,
     width: "100%",
   },
-  postFooter: {},
+  postFooter: {
+    marginTop: 5,
+  },
   postFooterStats: {
     flexDirection: "row",
     alignItems: "center",

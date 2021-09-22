@@ -4,23 +4,23 @@ import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import AntDesign from "react-native-vector-icons/AntDesign";
 import Ionicons from "react-native-vector-icons/Ionicons";
-import { Divider, ButtonGroup } from "react-native-elements";
+import { ButtonGroup } from "react-native-elements";
 
 import styles from "./PostStyles";
 
-export default function Post() {
+export default function Post({ post }) {
   return (
     <View style={styles.container}>
       <View style={styles.postHeader}>
         <View style={styles.postHeaderLeft}>
           <Image
             style={styles.profileImg}
-            source={require("../../assets/linus.jpg")}
+            source={post.profilePic}
             resizeMode="cover"
           />
           <View style={styles.postInfo}>
-            <Text style={styles.postUser}>Linus</Text>
-            <Text style={styles.postTime}>19h ago</Text>
+            <Text style={styles.postUser}>{post.user}</Text>
+            <Text style={styles.postTime}>{post.time}</Text>
           </View>
         </View>
         <View style={styles.postHeaderRight}>
@@ -29,12 +29,14 @@ export default function Post() {
         </View>
       </View>
       <View style={styles.postContent}>
-        <Text style={styles.postCaption}>💗💗💗</Text>
-        <Image
-          style={styles.postImage}
-          source={require("../../assets/post.jpg")}
-          resizeMode="contain"
-        />
+        {post.text ? <Text style={styles.postCaption}>{post.text}</Text> : null}
+        {post.image ? (
+          <Image
+            style={styles.postImage}
+            source={post.image}
+            resizeMode="contain"
+          />
+        ) : null}
       </View>
 
       <View style={styles.postFooter}>
