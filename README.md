@@ -30,4 +30,4 @@ Start the server
 
 ## Screenshots
 
-![App Screenshot](./assets/home.jpg)
+<img src="./assets/home.jpg" width="180" height="400">
