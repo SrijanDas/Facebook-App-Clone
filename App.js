@@ -3,7 +3,7 @@ import { NavigationContainer } from "@react-navigation/native";
 
 import { StyleSheet, SafeAreaView, StatusBar } from "react-native";
 import Header from "./components/Header";
-import Tabs from "./Tabs";
+import Tabs from "./components/Tabs";
 
 export default function App() {
   return (

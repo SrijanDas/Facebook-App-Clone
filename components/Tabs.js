@@ -1,10 +1,10 @@
 import React from "react";
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
-import Home from "./screens/Home";
-import People from "./screens/People";
-import More from "./screens/More";
-import Notifications from "./screens/Notifications";
-import Messages from "./screens/Messages";
+import Home from "../screens/Home";
+import People from "../screens/People";
+import More from "../screens/More";
+import Notifications from "../screens/Notifications";
+import Messages from "../screens/Messages";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import Feather from "react-native-vector-icons/Feather";

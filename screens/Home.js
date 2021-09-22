@@ -1,12 +1,13 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View, Text, ScrollView } from "react-native";
+import Post from "../components/Post/Post";
+import Share from "../components/Share";
 
 export default function Home() {
   return (
-    <View>
-      <Text>Home</Text>
-      {/* <Share /> */}
-      {/* <Posts /> */}
-    </View>
+    <ScrollView>
+      <Share />
+      <Post />
+    </ScrollView>
   );
 }
