@@ -14,7 +14,7 @@ export default function Tabs() {
 
   return (
     <Tab.Navigator
-      initialRouteName="Home"
+      initialRouteName="People"
       screenOptions={{
         tabBarActiveTintColor: "#1976D2",
         tabBarInactiveTintColor: "gray",

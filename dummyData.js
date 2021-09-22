@@ -23,3 +23,21 @@ export const posts = [
     time: "yesterday",
   },
 ];
+
+export const users = [
+  {
+    username: "@linus",
+    displayName: "Linus",
+    profilePic: require("./assets/linus.jpg"),
+  },
+  {
+    username: "@john_cena",
+    displayName: "John",
+    profilePic: require("./assets/john.jpg"),
+  },
+  {
+    username: "@elon_musk",
+    displayName: "Elon Musk",
+    profilePic: require("./assets/elon-musk.jpg"),
+  },
+];
