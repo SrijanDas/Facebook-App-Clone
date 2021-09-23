@@ -10,7 +10,7 @@ const Tabs = () => {
   const Tab = createMaterialTopTabNavigator();
   return (
     <Tab.Navigator
-      initialRouteName="Notifications"
+      initialRouteName="Messages"
       screenOptions={{
         tabBarActiveTintColor: "#1976D2",
         tabBarInactiveTintColor: "gray",

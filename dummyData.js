@@ -26,16 +26,19 @@ export const posts = [
 
 export const users = [
   {
+    id: 0,
     username: "@linus",
     displayName: "Linus",
     profilePic: require("./assets/linus.jpg"),
   },
   {
+    id: 1,
     username: "@john_cena",
     displayName: "John",
     profilePic: require("./assets/john.jpg"),
   },
   {
+    id: 2,
     username: "@elon_musk",
     displayName: "Elon Musk",
     profilePic: require("./assets/elon-musk.jpg"),
@@ -66,5 +69,20 @@ export const notifications = [
     time: "Wed at 12:41 am",
     seen: true,
     action: "comment",
+  },
+];
+
+export const dummyMessages = [
+  {
+    user: users[1],
+    lastMessage: "hey.......",
+    time: "24 Sept",
+    seen: true,
+  },
+  {
+    user: users[2],
+    lastMessage: "hey.......",
+    time: "23 Sept",
+    seen: false,
   },
 ];
