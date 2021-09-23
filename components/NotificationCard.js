@@ -3,12 +3,21 @@ import { View, Text, StyleSheet } from "react-native";
 import { Avatar } from "react-native-elements";
 import fontStyles from "../constants/fontStyles";
 import projectColors from "../constants/projectColors";
+import { CommentIcon, LikeIcon } from "../constants/icons";
 
 export default function NotificationCard({ notification }) {
-  const { user, text, time, seen } = notification;
+  const { user, text, time, seen, action } = notification;
+
   return (
     <View style={seen ? styles.container : styles.blueContainer}>
-      <Avatar rounded title="MD" source={user.profilePic} size="large" />
+      <View>
+        <Avatar rounded title="MD" source={user.profilePic} size="large" />
+        <View style={{ position: "absolute", bottom: -4, right: -8 }}>
+          {action === "like" && <LikeIcon large={true} />}
+          {action === "comment" && <CommentIcon large={true} />}
+          {action === "mention" && <CommentIcon large={true} />}
+        </View>
+      </View>
       <View style={styles.textContainer}>
         <Text style={styles.text}>
           <Text style={{ fontWeight: fontStyles.boldFont }}>

@@ -49,6 +49,7 @@ export const notifications = [
     text: "Liked your post.",
     time: "Wed at 12:41 am",
     seen: false,
+    action: "like",
   },
   {
     id: 2,
@@ -56,6 +57,7 @@ export const notifications = [
     text: "Mentioned you in a comment.",
     time: "Sun at 05:12 pm",
     seen: true,
+    action: "mention",
   },
   {
     id: 3,
@@ -63,5 +65,6 @@ export const notifications = [
     text: "Commented on your post.",
     time: "Wed at 12:41 am",
     seen: true,
+    action: "comment",
   },
 ];
