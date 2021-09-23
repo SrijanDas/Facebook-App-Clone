@@ -1,9 +1,12 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text } from "react-native";
 import { Avatar, Button } from "react-native-elements";
-import { users } from "../dummyData";
+import { users } from "../../dummyData";
+import peopleStyles from "./peopleStyles";
+import projectColors from "../../constants/projectColors";
 
 export default function People() {
+  const styles = peopleStyles;
   return (
     <View style={styles.container}>
       <Text style={styles.screenHeader}>People you may know</Text>
@@ -16,12 +19,16 @@ export default function People() {
             <View style={styles.cardBtns}>
               <Button
                 title="Follow"
-                buttonStyle={{ width: 110, borderRadius: 7 }}
+                buttonStyle={{
+                  width: 110,
+                  borderRadius: 7,
+                  backgroundColor: projectColors.blue,
+                }}
               />
               <Button
                 title="Remove"
                 buttonStyle={{
-                  backgroundColor: "#eaeaea",
+                  backgroundColor: projectColors.lightGrey,
                   marginLeft: 8,
                   borderRadius: 7,
                 }}
@@ -34,32 +41,3 @@ export default function People() {
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    padding: 12,
-    backgroundColor: "white",
-  },
-  screenHeader: {
-    fontWeight: "700",
-    fontSize: 22,
-    marginBottom: 5,
-  },
-  userCard: {
-    marginTop: 10,
-    marginBottom: 10,
-    flexDirection: "row",
-    alignItems: "center",
-  },
-  userInfo: {
-    marginLeft: 15,
-  },
-  displayName: {
-    fontSize: 18,
-    fontWeight: "700",
-  },
-  cardBtns: {
-    marginTop: 5,
-    flexDirection: "row",
-  },
-});

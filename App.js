@@ -1,17 +1,15 @@
 import React from "react";
-import { NavigationContainer } from "@react-navigation/native";
 
 import { StyleSheet, SafeAreaView, StatusBar } from "react-native";
 import Header from "./components/Header";
-import Tabs from "./components/Tabs";
+import TopTabNavigator from "./navigation/TopTabNavigator";
+// import Tabs from "./components/Tabs";
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       <Header />
-      <NavigationContainer>
-        <Tabs />
-      </NavigationContainer>
+      <TopTabNavigator />
     </SafeAreaView>
   );
 }
