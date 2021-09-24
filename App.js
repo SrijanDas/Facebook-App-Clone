@@ -3,7 +3,6 @@ import React from "react";
 import { StyleSheet, SafeAreaView, StatusBar } from "react-native";
 import Header from "./components/Header";
 import TopTabNavigator from "./navigation/TopTabNavigator";
-// import Tabs from "./components/Tabs";
 
 export default function App() {
   return (

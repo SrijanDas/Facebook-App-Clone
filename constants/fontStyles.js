@@ -3,4 +3,5 @@ export default fonts = {
   normalFontSize: 16,
   boldFont: "700",
   smallFontSize: 13,
+  largeFontSize: 30,
 };
