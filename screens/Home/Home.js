@@ -4,7 +4,7 @@ import Post from "../../components/Post/Post";
 import Share from "../../components/Share";
 import { posts } from "../../dummyData";
 
-export default function Home() {
+export default function Home({ navigation }) {
   return (
     <ScrollView>
       <Share />
